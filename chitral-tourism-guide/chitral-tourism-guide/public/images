@@ -1,0 +1,5 @@
+The `/chitral-tourism-guide/chitral-tourism-guide/public/images` directory is intended to contain all the images used in the website. Since this is a directory, it does not contain any files. Therefore, the contents of this directory will be empty. 
+
+You should place all the relevant image files (e.g., `tirichmir.JFIF`, `SHANDUR.JPEG`, `KALASH.JPEG`, `chitral-fort.JPEG`) in this directory to ensure they are accessible for the React application. 
+
+Please ensure to move the images from the original static site into this directory as needed.
