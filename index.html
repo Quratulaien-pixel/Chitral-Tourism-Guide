@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Chitral Tourism Guide</title>
+        <link rel="stylesheet"href="style.css">
+        
+
+        </meta>
+    </head>
+    <body>
+        <header>
+          <nav>
+    <h1>Chitral Tourism Guide</h1>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#ai-guide">AI Guide</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav> 
+     </header>
+     <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>WELCOME TO CHITRAL TOURISM GUIDE</h2>
+            <p>Discover the breathtaking beauty, rich culture, colorful festivals, and warm hospitality of Chitral.
+
+            </p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+     </section>
+     <section class="places" id="explore">
+
+    <h2>Explore Chitral</h2>
+
+    <p class="section-intro">
+        Discover some of the most beautiful and culturally rich places in Chitral.
+    </p>
+
+    <div class="place-container">
+
+        <!-- Tirich Mir -->
+        <div class="place-card">
+
+            <img src="images/tirichmir.JPGE.jfif" alt="Tirich Mir">
+
+            <h3>Tirich Mir</h3>
+
+            <p>
+                Explore the majestic Tirich Mir, the highest peak of the Hindu Kush.
+            </p>
+
+            <button class="place-btn"
+                onclick="showPlace('tirichmir', this)">
+                Learn More
+            </button>
+
+            <div class="place-details"></div>
+
+        </div>
+
+
+        <!-- Shandur Pass -->
+        <div class="place-card">
+
+            <img src="images/SHANDUR.JPEG" alt="Shandur Pass">
+
+            <h3>Shandur Pass</h3>
+
+            <p>
+                Experience the famous Shandur Polo Festival at one of the world's
+                highest polo grounds.
+            </p>
+
+            <button class="place-btn"
+                onclick="showPlace('shandur', this)">
+                Learn More
+            </button>
+
+            <div class="place-details"></div>
+
+        </div>
+
+
+        <!-- Kalash Valley -->
+        <div class="place-card">
+
+            <img src="images/KALASH.JPEG" alt="Kalash Valley">
+
+            <h3>Kalash Valley</h3>
+
+            <p>
+                Discover the unique culture, tradition, and colorful festivals
+                of the Kalash people.
+            </p>
+
+            <button class="place-btn"
+                onclick="showPlace('kalash', this)">
+                Learn More
+            </button>
+
+            <div class="place-details"></div>
+
+        </div>
+
+
+        <!-- Chitral Fort -->
+        <div class="place-card">
+
+            <img src="images/chitral-fort.JPEG" alt="Chitral Fort">
+
+            <h3>Chitral Fort</h3>
+
+            <p>
+                Visit this historical landmark and learn about the rich history
+                of Chitral.
+            </p>
+
+            <button class="place-btn"
+                onclick="showPlace('fort', this)">
+                Learn More
+            </button>
+
+            <div class="place-details"></div>
+
+        </div>
+
+    </div>
+
+</section>
+     <section class="hotels" id="hotels">
+<h2>Stay in Chitral</h2>
+
+        <p class="section-intro">
+            Find comfortable places to stay during your visit to Chitral.
+        </p>
+   
+    
+
+    <div class="hotel-container">
+
+       <div class="hotel-card">
+
+    <div class="hotel-icon">🏨</div>
+
+    <h3>Hindukush Heights</h3>
+
+    <p class="location">📍 Chitral, Pakistan</p>
+
+    <p>
+        A well-known hotel in Chitral offering accommodation for
+        visitors exploring the city and surrounding mountain areas.
+    </p>
+
+    
+
+    <button class="hotel-btn"
+        onclick="showHotel('hindukush', this)">
+        View Details
+    </button>
+
+    <div class="hotel-details"></div>
+
+</div>
+<div class="hotel-card">
+
+    <div class="hotel-icon">🏨</div>
+
+    <h3>Town Inn Guest House</h3>
+
+    <p class="location">📍 Danin, Chitral</p>
+
+    <p>
+        A peaceful guest house near Chitral city, suitable for
+        travelers and families looking for a comfortable stay.
+    </p>
+
+    <button class="hotel-btn"
+        onclick="showHotel('towninn', this)">
+        View Details
+    </button>
+
+    <div class="hotel-details"></div>
+
+</div>
+<div class="hotel-card">
+
+    <div class="hotel-icon">🏨</div>
+
+    <h3>Ayun Fort Inn</h3>
+
+    <p class="location">📍 Ayun, Chitral</p>
+
+    <p>
+        A beautiful hotel located in Ayun, providing a convenient base
+        for visitors exploring Ayun and the Kalash Valley region.
+    </p>
+
+    <button class="hotel-btn"
+        onclick="showHotel('ayunfort', this)">
+        View Details
+    </button>
+
+    <div class="hotel-details"></div>
+
+</div>
+        
+</div>
+</section>
+    <section class="festivals" id="festivals">
+
+    <h2>Festivals & Events</h2>
+
+    <p class="section-intro">
+        Experience the colorful traditions, sports, music, and cultural
+        celebrations of Chitral.
+    </p>
+
+    <div class="festival-container">
+
+        <!-- Chilam Joshi -->
+        <div class="festival-card">
+            <div class="festival-icon">🌸</div>
+
+            <h3>Chilam Joshi Festival</h3>
+
+            <p class="festival-date">📅 May 13–16</p>
+
+            <p>
+                A vibrant annual spring celebration of the Kalash people,
+                featuring colorful traditional attire, music, dancing,
+                cultural rituals, and sacred milk offerings.
+            </p>
+
+            <button class="festival-btn"
+                onclick="showFestival('chilam')">
+                Learn More
+            </button>
+        </div>
+
+
+        <!-- Shandur Polo Festival -->
+        <div class="festival-card">
+            <div class="festival-icon">🏇</div>
+
+            <h3>Shandur Polo Festival</h3>
+
+            <p class="festival-date">📅 July</p>
+
+            <p>
+                An iconic annual sports and cultural event featuring
+                thrilling freestyle polo between Chitral and
+                Gilgit-Baltistan.
+            </p>
+
+            <button class="festival-btn"
+                onclick="showFestival('shandur')">
+                Learn More
+            </button>
+        </div>
+
+
+        <!-- Uchal -->
+        <div class="festival-card">
+            <div class="festival-icon">🌾</div>
+
+            <h3>Uchal Festival</h3>
+
+            <p class="festival-date">📅 August</p>
+
+            <p>
+                An ancient Kalash harvest celebration featuring
+                traditional dancing, folk music, prayers, food,
+                and community gatherings.
+            </p>
+
+            <button class="festival-btn"
+                onclick="showFestival('uchal')">
+                Learn More
+            </button>
+        </div>
+
+
+        <!-- Chaumos -->
+        <div class="festival-card">
+            <div class="festival-icon">❄️</div>
+
+            <h3>Chaumos Festival</h3>
+
+            <p class="festival-date">📅 December</p>
+
+            <p>
+                The major winter and New Year celebration of the
+                Kalash people, featuring purification rituals,
+                bonfires, traditional singing, and dancing.
+            </p>
+
+            <button class="festival-btn"
+                onclick="showFestival('chaumos')">
+                Learn More
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Festival Details -->
+
+    <div id="festival-details" class="festival-details">
+
+        <button class="close-festival"
+            onclick="closeFestival()">✕</button>
+
+        <div id="festival-content"></div>
+
+    </div>
+
+</section>
+
+    <section class="ai-guide" id="ai-guide">
+
+    <h2>🤖 AI Chitral Travel Guide</h2>
+
+    <p class="section-intro">
+        Ask our AI guide anything about traveling in Chitral.
+    </p>
+
+    <div class="ai-box">
+
+        <h3>Plan Your Chitral Trip</h3>
+
+        <p>
+            Ask about places to visit, hotels, festivals, travel tips,
+            local culture, or create a personalized itinerary.
+        </p>
+
+        <textarea 
+            id="user-question"
+            placeholder="Example: Plan a 3-day trip to Chitral for me..."
+        ></textarea>
+
+        <button id="ask-ai">Ask AI</button>
+
+        <div id="ai-response">
+            <p>Your AI response will appear here.</p>
+        </div>
+</section> 
+<section class="tips" id="travel-tips">
+
+    <h2>Travel Tips for Chitral</h2>
+
+    <p class="section-intro">
+        Helpful information to make your journey to Chitral easier and more enjoyable.
+    </p>
+
+    <div class="tips-container">
+
+        <!-- Best Time to Visit -->
+        <div class="tip-card">
+
+            <div class="tip-icon">🌤️</div>
+
+            <h3>Best Time to Visit</h3>
+
+            <p>
+                Choose the best season according to your travel plans
+                and the places you want to explore.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('season', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+
+        <!-- What to Pack -->
+        <div class="tip-card">
+
+            <div class="tip-icon">🎒</div>
+
+            <h3>What to Pack</h3>
+
+            <p>
+                Pack according to the season and activities you plan
+                to enjoy in Chitral.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('packing', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+
+        <!-- Transportation -->
+        <div class="tip-card">
+
+            <div class="tip-icon">🚗</div>
+
+            <h3>Transportation</h3>
+
+            <p>
+                Learn about transportation options and plan your
+                journey between different destinations.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('transport', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+
+        <!-- Respect Local Culture -->
+        <div class="tip-card">
+
+            <div class="tip-icon">🤝</div>
+
+            <h3>Respect Local Culture</h3>
+
+            <p>
+                Respect local traditions, communities, customs,
+                and cultural sites.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('culture', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+
+        <!-- Mountain Safety -->
+        <div class="tip-card">
+
+            <div class="tip-icon">🏔️</div>
+
+            <h3>Mountain Safety</h3>
+
+            <p>
+                Stay prepared and careful when traveling through
+                mountainous areas.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('safety', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+
+        <!-- Money & Essentials -->
+        <div class="tip-card">
+
+            <div class="tip-icon">💵</div>
+
+            <h3>Money & Essentials</h3>
+
+            <p>
+                Keep important travel essentials with you while
+                exploring Chitral.
+            </p>
+
+            <button class="tip-btn"
+                onclick="showTip('money', this)">
+                Read More
+            </button>
+
+            <div class="tip-details"></div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+
+    <h2>Contact Chitral Tourism Guide</h2>
+
+    <p class="section-intro">
+        Have a question or need help planning your trip to Chitral?
+        Get in touch with us.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Location -->
+        <div class="contact-card">
+
+            <div class="contact-icon">•</div>
+
+            <h3>Location</h3>
+
+            <p>
+                Chitral, Khyber Pakhtunkhwa, Pakistan
+            </p>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="contact-card">
+
+            <div class="contact-icon">•</div>
+
+            <h3>Email</h3>
+
+            <p>
+                <a href="mailto:ainee8117@gmail.com">
+                    ainee8117@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Contact Number -->
+        <div class="contact-card">
+
+            <div class="contact-icon">•</div>
+
+            <h3>Contact Number</h3>
+
+            <p>
+                <a href="tel:+923402727074">
+                    0340 2727074
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Travel Assistance -->
+        <div class="contact-card">
+
+            <div class="contact-icon">•</div>
+
+            <h3>Travel Assistance</h3>
+
+            <p>
+                Get helpful information about hotels,
+                festivals, attractions, transportation,
+                and travel tips.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
